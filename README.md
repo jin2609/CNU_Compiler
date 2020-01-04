@@ -54,4 +54,12 @@
 [def][e/f]:
 [ghi][h/i]: (2) print  // abcdeeghhabcdeeghh를 출력 
 ~~~~
-### 
+- Hoo 파일은 문법상의 오류가 없는것으로 가정하고 구현
+###  MiniGoPrintListener
+ - 'ANTLR'를 활용해 주어진 문법에 대하여 go파일을 pretty print하는 프로그램
+ <pretty print 조건>
+ -- 블록이나 nesting 되어 들어갈 때는 4칸 들여쓰되 ‘.’을 찍음 
+ -- If 등의 특수 절이나 함수 시작은 괄호를 함수 옆에 표시한다. 
+ -- 2진 연산자와 피연산 사이에는 빈칸을 1칸 둔다. Ex) x+y -> x + y 
+ -- 전위 연산자와 피연산자 사이에는 빈칸을 두지 않는다. Ex) ++x  
+ -- 일반 괄호는 expression에 붙여 적는다. Ex) (x + y) 
