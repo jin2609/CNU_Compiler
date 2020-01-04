@@ -33,3 +33,25 @@
 - 3 : 함수의 바인딩처리
 --------------------------------------
 ## 2018년도 가을학기 컴파일러개론
+### Hoo_Compiler
+- Hoo 파일을 입력받아, C코드를 출력하는 프로그램
+~~~~
+//Hoo코드 예시
+[abc]: print    // abc 를 출력 
+[abc]: ignore   // 아무 것도 안 출력 
+[abc]: (3) print    // abcabcabc 를 출력 
+[]:print    // 빈 줄 출력 (newline) 
+ 
+[abc]: 
+[def]: 
+[ghi]: print    // abcdefghi 를 출력 
+ 
+[abcb][e/b]:print   // aece를 출력 (모든 b대신 e로 바꿈) 
+[abcb][U]: print    // ABCB를 출력 (모두 대문자) 
+[aBCB][L]: print   // abcb를 출력 (모두 소문자) 
+ 
+[abc]: 
+[def][e/f]:
+[ghi][h/i]: (2) print  // abcdeeghhabcdeeghh를 출력 
+~~~~
+### 
