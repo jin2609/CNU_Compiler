@@ -69,4 +69,13 @@
 - 구문분석방법인 Top-Down방식에서 활용되는 First와 Follow 구현
 - Recursive Descent Parser 구현
 
-### 
+### UcodeGen_MiniGo
+- MiniGo.g4파일에 대한 문법을 바탕으로 Ucode를 생성하는 Compiler 제작
+- Go파일을 입력받고, Antlr가 파싱을하여 파싱 결과를 ucode로 변경해주는 Compiler
+- 처음으로 만들어본 컴파
+### UcodeGen_MiniGo2
+- print 문법 추가
+
+## 주요 프로젝트
+#### Cute18_interprete_1,2,3
+#### UcodeGen_MiniGo2
