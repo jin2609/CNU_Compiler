@@ -36,7 +36,7 @@
 ### Hoo_Compiler
 - Hoo 파일을 입력받아, C코드를 출력하는 프로그램
 ~~~~
-//Hoo코드 예시
+/*Hoo코드 예시*/
 [abc]: print    // abc 를 출력 
 [abc]: ignore   // 아무 것도 안 출력 
 [abc]: (3) print    // abcabcabc 를 출력 
